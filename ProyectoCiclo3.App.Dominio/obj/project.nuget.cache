@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GNEqGtb4p37rBKZL8Qm2Yl1+7Fmovob0oYxWNFfRroTXNN1Mu95nbbYOQAhrE89oVu/OrXAwl6gR4jVXQlJWMQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HP AMD\\Downloads\\ejercicio_base_ciclo3_MT-main\\ProyectoCiclo3.App.Dominio\\ProyectoCiclo3.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP AMD\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\HP AMD\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
