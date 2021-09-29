@@ -10,15 +10,15 @@ C:\Users\mario\Desktop\Misiontic\Ciclo3\ProyectoCiclo3.App\ProyectoCiclo3.App.Pe
 C:\Users\mario\Desktop\Misiontic\Ciclo3\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CopyComplete
 C:\Users\mario\Desktop\Misiontic\Ciclo3\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
 C:\Users\mario\Desktop\Misiontic\Ciclo3\ProyectoCiclo3.App\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.deps.json
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Dominio.dll
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Dominio.pdb
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csprojAssemblyReference.cache
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.AssemblyInfoInputs.cache
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.AssemblyInfo.cs
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CoreCompileInputs.cache
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CopyComplete
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
-C:\Users\HP AMD\Downloads\ejercicio_base_ciclo3_MT-main\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.AssemblyInfo.cs
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.deps.json
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.dll
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.pdb
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Dominio.dll
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\bin\Debug\netstandard2.1\ProyectoCiclo3.App.Dominio.pdb
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Persistencia\obj\Debug\netstandard2.1\ProyectoCiclo3.App.Persistencia.csproj.CopyComplete

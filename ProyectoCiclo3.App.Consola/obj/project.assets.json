@@ -5835,19 +5835,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP AMD\\.nuget\\packages\\": {}
+    "C:\\Users\\mario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP AMD\\Downloads\\ejercicio_base_ciclo3_MT-main\\ProyectoCiclo3.App.Consola\\ProyectoCiclo3.App.Consola.csproj",
+      "projectUniqueName": "C:\\Users\\mario\\Desktop\\Misiontic\\Ciclo3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\ProyectoCiclo3.App.Consola.csproj",
       "projectName": "ProyectoCiclo3.App.Consola",
-      "projectPath": "C:\\Users\\HP AMD\\Downloads\\ejercicio_base_ciclo3_MT-main\\ProyectoCiclo3.App.Consola\\ProyectoCiclo3.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\HP AMD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP AMD\\Downloads\\ejercicio_base_ciclo3_MT-main\\ProyectoCiclo3.App.Consola\\obj\\",
+      "projectPath": "C:\\Users\\mario\\Desktop\\Misiontic\\Ciclo3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\ProyectoCiclo3.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mario\\Desktop\\Misiontic\\Ciclo3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP AMD\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\mario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5858,8 +5858,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\HP AMD\\Downloads\\ejercicio_base_ciclo3_MT-main\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\HP AMD\\Downloads\\ejercicio_base_ciclo3_MT-main\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj"
+            "C:\\Users\\mario\\Desktop\\Misiontic\\Ciclo3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\mario\\Desktop\\Misiontic\\Ciclo3\\ProyectoCiclo3.App\\ProyectoCiclo3.App.Persistencia\\ProyectoCiclo3.App.Persistencia.csproj"
             }
           }
         }

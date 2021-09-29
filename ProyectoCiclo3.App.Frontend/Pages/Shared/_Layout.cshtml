@@ -1,82 +1,152 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Proyecto Aeropuerto</title>
 
-    <title>Proyecto Aviones</title>
-  </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button id="siderbarCollapse" class="btn navbar-btn">
-       <i class="fas fa-lg fa-bars"></i>" 
-      </button>
-    <a class="navbar-brand" id ="logo" href="">
-      <h3>Proyecto Aviones</h3>
-      </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"> 
-            <i class=fas fa-sign-out-alt"></i>
-           Logout <span class="sr-only">(current)</span></a>
-        </li>
-         <li class="nav-item active">
-          <a class="nav-link" href="#"> 
-            <i class=fas fa-sign-out-alt"></i>
-           Logout <span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  hjhj
-
-  <div class="wrapper fixed-left">
-    <nav id="sidebar">
-      <div class="sidebar-header">
-        <h3><i class="fas fa-user"></i>Username</h3>
-      </div>
-      <ul class="list-unstyled components">
-        <li>
-          <a href=""><i class="fas fa-home"></i>Home</a>
-        </li>
-        <li>
-          <a href=""><i class="fab fa-avianex"></i></i>Avion</a>
-        </li>
-        <li>
-          <a href=""><i class="fas fa-luggage-cart"></i>Aeropuerto</a>
-        </li>
-        <li>
-          <a href=""><i class=<i class="fas fa-map-marked-alt"></i>rutas</a>
-        </li>
-      </ul>
-
-
-    </nav>
-
-  </div>
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     
+    <link rel="stylesheet" href="assets/css/media-queries.css">
 
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-    
-  
+</head> 
+
+<body>
+    <header>
+        
+        <div class="wrapper">
+            <nav class="sidebar">
+                <div class="dismiss">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+            
+                <div class="logo">
+                    <h3><a href="index.cshtml">Bootstrap 4 Template with Sidebar Menu</a></h3>
+                </div>
+                
+            
+                <ul class="list-unstyled menu-elements">
+                    <li class="active">
+                        <a class="scroll-link" asp-page="/Index"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                            
+                    <li>
+                        <a href="#aviones" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+                            <i class="fas fa-plane"></i>Aviones
+                        </a>
+                        <ul class="collapse list-unstyled" id="aviones">
+                            <li>
+                                <a class="scroll-link" asp-page="/Avion/List">Lista</a>
+                            </li>
+                            <li>
+                                <a class="scroll-link" asp-page="/Avion/Create">Crear</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#aeropuerto" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+                            <i class="fas fa-plane-departure"></i>Aeropuerto
+                        </a>
+                        <ul class="collapse list-unstyled" id="aeropuerto">
+                            <li>
+                                <a class="scroll-link" asp-page="/Aeropuerto/List">Lista</a>
+                            </li>
+                            <li>
+                                <a class="scroll-link" asp-page="/Aeropuerto/Create">Crear</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#Rutas" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+                            <i class="fas fa-map-marked-alt"></i>Rutas
+                        </a>
+                        <ul class="collapse list-unstyled" id="Rutas">
+                            <li>
+                                <a class="scroll-link" asp-page="/Rutas/List">Lista</a>
+                            </li>
+                            <li>
+                                <a class="scroll-link" asp-page="/Rutas/Create">Crear</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                
+            
+                <div class="dark-light-buttons">
+                    <a class="btn btn-primary btn-customized-4 btn-customized-dark" href="#" role="button">Dark</a>
+                    <a class="btn btn-primary btn-customized-4 btn-customized-light" href="#" role="button">Light</a>
+                </div>
+             
+
+                <!-- Content -->
+                <div class="content">
+            
+                    <!-- open sidebar menu -->
+                    <a class="btn btn-primary btn-customized open-menu" href="#" role="button">
+                        <i class="fas fa-align-left"></i> <span>Menu</span>
+                    </a>
+            
+                    <!-- ... -->
+            
+                    <!-- here is the page's content (not shown here) -->
+            
+                    <!-- ... -->
+            
+                </div>
+                <!-- End content -->
+            
+            </div>
+ 
+ 
+            </nav>
+        </div>
+
+
+    </header>
+
+
     <div class="container">
-          <main role="main" class="pb-3">
-              @RenderBody()
-          </main>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
     </div>
 
-      
-  </body>
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+    <!-- Javascript -->
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+</body>
 </html>
