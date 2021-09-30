@@ -130,3 +130,5 @@ C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Frontend\bin\De
 C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Frontend\bin\Debug\netcoreapp3.1\ProyectoCiclo3.App.Dominio.pdb
 C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Avion\Details.cshtml.g.cs
 C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Avion\Edit.cshtml.g.cs
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ruta\Details.cshtml.g.cs
+C:\Users\Developer\Documents\GitHub\MisionTic\ProyectoCiclo3.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Ruta\Edit.cshtml.g.cs
