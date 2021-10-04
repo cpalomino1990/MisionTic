@@ -4,29 +4,45 @@
 @{
 }
 
-<div class="navigation-links xs-hidden">
-    <app-tagging position="start" text="Home" asp-page="[ '/home']"></app-tagging>
-    <app-tagging position="end" text="Lista"></app-tagging>
+
+<link rel="stylesheet" href="~/css/List.css" />
+
+
+<div>
+    <h1>Listado de Aviones</h1>
+    <table class="table">
+        <thead>       
+                <tr>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Mumeros de Asientos</th>
+                    <th>Numeros de Baños</th>
+                    <th>Capasidad Maxima</th>
+                    <th></th>
+
+            </tr>
+            </thead>
+        @foreach (var avion in Model.Aviones)
+        {
+        <tbody>
+            <tr>
+                <td>@avion.id</td>
+                <td>@avion.marca</td>
+                <td>@avion.modelo</td>
+                <td>@avion.numero_asientos</td>
+                <td>@avion.numero_banos</td>
+                <td>@avion.capacidad_maxima</td>
+                <td>
+                <a class="btn btn-info" asp-page="./Details" asp-route-avionId="@avion.id"><i class="fas fa-adjust"></i>Ver</a>
+                <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.id"><i class="fas fa-adjust">Editar</a>
+                <form method="POST">
+                 <input type="number" class="d-none" id="id" asp-for="@avion.id">
+                 <button type="submit"class="btn btn-danger">Eliminar</button>
+                </form>
+                </td>
+            </tr>
+        </tbody>
+        }
+    </table>
 </div>
-
-
-
-<h1>Listado de Aviones</h1>
-<table class="table">
-    @foreach (var avion in Model.Aviones)
-    {
-        <tr>
-            <td>@avion.id</td>
-            <td>@avion.marca</td>
-            <td>@avion.modelo</td>
-            <td>@avion.numero_asientos</td>
-            <td>@avion.numero_banos</td>
-            <td>@avion.capacidad_maxima</td>
-            <td>
-              <a class="btn btn-info" asp-page="./Details" asp-route-avionId="@avion.id"><i class="fas fa-adjust"></i>Ver</a>
-              <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.id"><i class="fas fa-adjust">Editar</a>
-              <a class="btn btn-danger" href="">Eliminar</a>
-              </td>
-        </tr>
-    }
-</table>

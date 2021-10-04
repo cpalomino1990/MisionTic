@@ -9,18 +9,17 @@ using ProyectoCiclo3.App.Persistencia.AppRepositorios;
 using ProyectoCiclo3.App.Dominio;
 namespace ProyectoCiclo3.App.Frontend.Pages
 {
-    public class EditAvionModel : PageModel
+    public class EditAeropuertoModel : PageModel
     {
-        private readonly RepositorioAviones repositorioAviones;
-        [BindProperty]
-         public Aviones Avion {get;set;}
-public EditAvionModel(RepositorioAviones repositorioAviones)
+        private readonly RepositorioAeropuertos repositorioAeropuertos;
+        public Aeropuertos Aeropuerto {get;set;}
+public EditAeropuertoModel(RepositorioAeropuertos repositorioAeropuertos)
        {
-            this.repositorioAviones=repositorioAviones;
+            this.repositorioAeropuertos=repositorioAeropuertos;
        }
-public IActionResult OnGet(int avionId)
+public IActionResult OnGet(int aeropuertoId)
         {
-            Avion=repositorioAviones.GetAvionWithId(avionId);
+            Aeropuerto=repositorioAeropuertos.GetAeropuertoWithId(aeropuertoId);
             return Page(); 
         }
         
@@ -30,11 +29,11 @@ public IActionResult OnPost()
             {
                 return Page();
             }
-            if(Avion.id>0)
+            if(Aeropuerto.id>0)
             {
-            Avion = repositorioAviones.Update(Avion);
+            Aeropuerto = repositorioAeropuertos.Update(Aeropuerto);
             }
-            return RedirectToPage("./List");
+            return Page();
         }
 
     }

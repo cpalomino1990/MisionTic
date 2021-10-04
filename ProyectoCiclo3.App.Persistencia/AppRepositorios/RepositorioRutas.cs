@@ -28,6 +28,9 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
             return rutas.SingleOrDefault(b => b.Id == Id);
             
         }
+        
+       
+
         public Rutas Update(Rutas newRuta){
             var ruta = rutas.SingleOrDefault(b => b.Id == newRuta.Id);
             if(ruta != null){

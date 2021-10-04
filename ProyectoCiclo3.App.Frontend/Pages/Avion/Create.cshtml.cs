@@ -12,15 +12,30 @@ namespace ProyectoCiclo3.App.Frontend.Pages
         public class CreateAvionModel : PageModel
         {
             private readonly RepositorioAviones repositorioAviones;
+            [BindProperty]
             public Aviones Avion {get;set;}
-    public CreateAvionModel(RepositorioAviones repositorioAviones)
+            
+            public CreateAvionModel(RepositorioAviones repositorioAviones)
         {
-                this.repositorioAviones=repositorioAviones;
+             this.repositorioAviones=repositorioAviones;
         }
-    public IActionResult OnGet(int avionId)
+          public IActionResult OnGet(int avionId)
+        {
+            Avion=repositorioAviones.GetAvionWithId(avionId);
+            return Page(); 
+        }
+           public IActionResult OnPost()
+        {
+            if(!ModelState.IsValid)
             {
-                Avion=repositorioAviones.GetAvionWithId(avionId);
-                return Page(); 
-            }
+                return Page();
+            }     
+
+            Avion = repositorioAviones.Create(Avion);            
+            return RedirectToPage("./List");
         }
     }
+ }
+
+
+        

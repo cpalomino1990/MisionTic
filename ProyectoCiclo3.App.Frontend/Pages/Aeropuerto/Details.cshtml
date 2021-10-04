@@ -1,0 +1,17 @@
+@page
+@model ProyectoCiclo3.App.Frontend.Pages.DetailsAeropuertoModel
+@{
+    var aeropuerto = Model.Aeropuerto;
+}
+ <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">ver</li>
+  </ol>
+<ul class="list-group list-group-flush" >
+  <li class="list-group-item"> <b>id: </b> @aeropuerto.id</li>
+  <li class="list-group-item"> <b>Nombre: </b> @aeropuerto.nombre</li>
+  <li class="list-group-item"> <b>Cuidad: </b> @aeropuerto.ciudad</li>
+  <li class="list-group-item"><b>Pais: </b> @aeropuerto.pais</li>
+  <li class="list-group-item"><b>Coodenada X: </b> @aeropuerto.coord_x</li>
+  <li class="list-group-item"><b>Coodenada Y: </b> @aeropuerto.coord_y</li>
+</ul>	
+<hr><a href="javascript:history.back()"><button class="btn btn-primary hBack" type="button">Atras</button></a>
