@@ -12,6 +12,7 @@ namespace ProyectoCiclo3.App.Frontend.Pages
     public class EditAeropuertoModel : PageModel
     {
         private readonly RepositorioAeropuertos repositorioAeropuertos;
+        [BindProperty]
         public Aeropuertos Aeropuerto {get;set;}
 public EditAeropuertoModel(RepositorioAeropuertos repositorioAeropuertos)
        {
@@ -33,7 +34,7 @@ public IActionResult OnPost()
             {
             Aeropuerto = repositorioAeropuertos.Update(Aeropuerto);
             }
-            return Page();
+              return RedirectToPage("./List");
         }
 
     }

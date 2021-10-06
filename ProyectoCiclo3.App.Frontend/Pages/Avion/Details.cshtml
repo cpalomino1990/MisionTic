@@ -3,15 +3,33 @@
 @{
     var avion = Model.Avion;
 }
- <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">ver</li>
-  </ol>
-<ul class="list-group list-group-flush" >
-  <li class="list-group-item"> <b>id: </b> @avion.id</li>
-  <li class="list-group-item"> <b>Marca: </b> @avion.marca</li>
-  <li class="list-group-item"> <b>Modelo: </b> @avion.modelo</li>
-  <li class="list-group-item"><b>numero de asientos: </b> @avion.numero_asientos</li>
-  <li class="list-group-item"><b>Numero de baños: </b> @avion.numero_banos</li>
-  <li class="list-group-item"><b>Peso Maximo: </b> @avion.capacidad_maxima</li>
-</ul>	
-<hr><a href="javascript:history.back()"><button class="btn btn-primary hBack" type="button">Atras</button></a>
+<link rel="stylesheet" href="~/css/Delails.css" />
+
+<section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span ></span>
+                
+            </section>
+            
+        </section>
+
+        <form action="" class="form_contact">
+            <h2>Ver Aviones</h2>
+            <div class="user_info">
+                <ol class="list-group list-group-flush" >
+                  <li class="list-group-item"> <b>id: </b> @avion.id</li>
+                  <li class="list-group-item"> <b>Marca: </b> @avion.marca</li>
+                  <li class="list-group-item"> <b>Modelo: </b> @avion.modelo</li>
+                  <li class="list-group-item"><b>umero de asientos: </b> @avion.numero_asientos</li>
+                  <li class="list-group-item"><b>Numero de baños: </b> @avion.numero_banos</li>
+                  <li class="list-group-item"><b>Peso Maximo: </b> @avion.capacidad_maxima</li>
+              </ol>	
+              <a href="javascript:history.back()"><button class="btn btn-primary hBack" type="button">Atras</button></a>
+            </div>
+        </form>
+
+    </section>
+</section>
+

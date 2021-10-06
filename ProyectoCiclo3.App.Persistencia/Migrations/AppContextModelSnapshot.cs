@@ -18,28 +18,79 @@ namespace ProyectoCiclo3.App.Persistencia.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("ProyectoCiclo3.App.Dominio.Encomienda", b =>
+            modelBuilder.Entity("ProyectoCiclo3.App.Dominio.Aeropuertos", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("descripcion")
+                    b.Property<string>("ciudad")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("peso")
+                    b.Property<int>("coord_x")
                         .HasColumnType("int");
 
-                    b.Property<string>("presentacion")
+                    b.Property<int>("coord_y")
+                        .HasColumnType("int");
+
+                    b.Property<string>("nombre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("tipo")
+                    b.Property<string>("pais")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
 
-                    b.ToTable("Encomiendas");
+                    b.ToTable("Aeropuertos");
+                });
+
+            modelBuilder.Entity("ProyectoCiclo3.App.Dominio.Aviones", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("capacidad_maxima")
+                        .HasColumnType("int");
+
+                    b.Property<string>("marca")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("modelo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("numero_asientos")
+                        .HasColumnType("int");
+
+                    b.Property<int>("numero_banos")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Aviones");
+                });
+
+            modelBuilder.Entity("ProyectoCiclo3.App.Dominio.Rutas", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("Destino")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Origen")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Tiempo_Estimado")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Rutas");
                 });
 #pragma warning restore 612, 618
         }

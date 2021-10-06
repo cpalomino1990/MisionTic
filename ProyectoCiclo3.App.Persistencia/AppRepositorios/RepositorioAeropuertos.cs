@@ -14,8 +14,8 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         aeropuertos= new List<Aeropuertos>()
         {
             new Aeropuertos{id=1,nombre="dorado",ciudad= "bogota",pais= "colombia", coord_x= 4, coord_y=150},
-            new Aeropuertos{id=1,nombre="dorado",ciudad= "bogota",pais= "colombia", coord_x= 4, coord_y=150},
-             new Aeropuertos{id=1,nombre="dorado",ciudad= "bogota",pais= "colombia", coord_x= 4, coord_y=150}
+            new Aeropuertos{id=2,nombre="dorado",ciudad= "bogota",pais= "colombia", coord_x= 4, coord_y=150},
+             new Aeropuertos{id=3,nombre="dorado",ciudad= "bogota",pais= "colombia", coord_x= 4, coord_y=150}
         };
     }
  
@@ -27,6 +27,7 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
         public Aeropuertos GetAeropuertoWithId(int id){
             return aeropuertos.SingleOrDefault(b => b.id == id);
         }
+        
         public Aeropuertos Create(Aeropuertos newAeropuerto)
         {
            if(aeropuertos.Count > 0){
@@ -36,6 +37,12 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
             }
            aeropuertos.Add(newAeropuerto);
            return newAeropuerto;
+        }
+        public Aeropuertos Delete(int id)
+        {
+        var aeropuerto= aeropuertos.SingleOrDefault(b => b.id == id);
+        aeropuertos.Remove(aeropuerto);
+        return aeropuerto;
         }
 
         public Aeropuertos Update(Aeropuertos newAeropuerto){

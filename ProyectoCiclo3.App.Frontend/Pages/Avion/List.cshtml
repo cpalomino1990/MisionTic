@@ -6,11 +6,13 @@
 
 
 <link rel="stylesheet" href="~/css/List.css" />
+<script src="~/js/List.js" asp-append-version="true"></script>
 
 
 <div>
     <h1>Listado de Aviones</h1>
-    <table class="table">
+    
+    <table class="table table-striped" id="tabla">
         <thead>       
                 <tr>
                     <th>ID</th>
@@ -19,9 +21,13 @@
                     <th>Mumeros de Asientos</th>
                     <th>Numeros de Baños</th>
                     <th>Capasidad Maxima</th>
-                    <th></th>
+                     
+                    <th>
+                        <input id="buscar" type="text" class="form-control" placeholder="Escriba algo para filtrar" />
+                    </th>
+                   
 
-            </tr>
+              </tr>
             </thead>
         @foreach (var avion in Model.Aviones)
         {
@@ -33,16 +39,20 @@
                 <td>@avion.numero_asientos</td>
                 <td>@avion.numero_banos</td>
                 <td>@avion.capacidad_maxima</td>
-                <td>
-                <a class="btn btn-info" asp-page="./Details" asp-route-avionId="@avion.id"><i class="fas fa-adjust"></i>Ver</a>
-                <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.id"><i class="fas fa-adjust">Editar</a>
-                <form method="POST">
-                 <input type="number" class="d-none" id="id" asp-for="@avion.id">
-                 <button type="submit"class="btn btn-danger">Eliminar</button>
-                </form>
+                <td >
+                    <form method="POST">
+                    <a class="btn btn-info" asp-page="./Details" asp-route-avionId="@avion.id"><i class="fas fa-list-alt"></i></a>
+                    <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.id"><i class="fas fa-edit"></i></a>
+                  
+                    
+                        <input type="number" class="d-none" id="eliminar" asp-for="@avion.id">
+                        <button type="submit" class="btn btn-danger" ><i class="fas fa-trash" ></i></button>
+                    </form>
+                
                 </td>
             </tr>
         </tbody>
         }
     </table>
 </div>
+
