@@ -1,19 +1,42 @@
-@page
+
+@page 
+@model ProyectoCiclo3.App.Frontend.Pages.CreateRutaModel
 @{
+var ruta = Model.Ruta;
 }
 
-<div class="text-center">
-  <form action="">
-    <label for="Id" class="form-label">Id:</label>
-    <input type="text" class="form-control" id="Id" name="Id" placeholder="Id">
+<link rel="stylesheet" href="~/css/create.css" />
+
+
+<h1 style="text-align: center;"> Crear Rutas</h1>
+<div class="card mb-3" style="max-width: 650px;" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img style="width:310px; height: 340px;" src="https://p4.wallpaperbetter.com/wallpaper/419/451/700/777-aircraft-airliner-airplane-wallpaper-preview.jpg" class="img-fluid"  alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+  <form method="POST">
+      
+    
     <label for="Oringen" class="form-label"> de origen:</label>
-    <input type="text" class="form-control" id="Origen" name="Origen" placeholder="Origen">
+    <select asp-for="@ruta.Origen" class="form-control">
+        <option value="">Seleccionar un aeropuerto</option>
+        @foreach (var aeropuerto in Model.Aeropuertos)
+    {
+        <option value="@aeropuerto.id">@aeropuerto.nombre - @aeropuerto.ciudad/@aeropuerto.pais</option>
+    }
+    </select>
     <label for="Destino" class="form-label">Aeropuesto de destino:</label>
     <input type="text" class="form-control" id="Destino" name="Destino" placeholder="Destino">
     <label for="TiempoEstimado" class="form-label">Tiempo del vuelo Estimado:</label>
     <input type="number" class="form-control" id="TiempoEstimado" name="TiempoEstimado" placeholder="TiempoEstimado">
 
+  
     <hr>
-    <button type="submit" class="btn btn-success">Enviar</button>
+   
+    <button type="submit" class="btn btn-success">Enviar</button> <a href="javascript:history.back()"><button class="btn btn-primary hBack" type="button">Atras</button></a>
   </form>
 </div>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">

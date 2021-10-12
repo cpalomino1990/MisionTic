@@ -4,6 +4,19 @@
 @{
     var aeropuerto = Model.Aeropuerto;
 }
+<link rel="stylesheet" href="~/css/breadcrumb.css"/>
+ <script src="~/js/breadcrumb.js" asp-append-version="true"></script>
+  <div id="orangeUI">
+        <div class="breadcrumbs">
+        <ul>
+            <li><a href="/Index">Home</a><div class="bread-shadow">Home</div></li>
+            <li><a href="/Aeropuerto/List">Listas</a><div class="bread-shadow">Listas</div></li>
+            <li><a href="/Aeropuerto/Edit"class="current">Editar</a><div class="bread-shadow">Editar</div></li>
+          </ul>
+    </div> 
+    
+ </div>
+
 <div class="text-center">
   <form method="POST">
     <label for="id" class="form-label">Id:</label>

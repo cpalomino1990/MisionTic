@@ -3,9 +3,22 @@
 @{
     var aeropuerto = Model.Aeropuerto;
 }
- <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">ver</li>
-  </ol>
+  <link rel="stylesheet" href="~/css/List.css"/>
+  <link rel="stylesheet" href="~/css/breadcrumb.css"/>
+  <script src="~/js/breadcrumb.js" asp-append-version="true"></script>
+    <div id="orangeUI">
+        <div class="breadcrumbs">
+              <ul>
+                  <li><a href="/Index">Home</a><div class="bread-shadow">Home</div></li>
+                  <li><a href="/Aeropuerto/List">Listas</a><div class="bread-shadow">Listas</div></li>
+                  <li><a href="/Aeropuerto/Details"class="current">Ver</a><div class="bread-shadow">Ver</div></li>
+
+              
+              </ul>
+          </div> 
+  </div>
+
+
 <ul class="list-group list-group-flush" >
   <li class="list-group-item"> <b>id: </b> @aeropuerto.id</li>
   <li class="list-group-item"> <b>Nombre: </b> @aeropuerto.nombre</li>

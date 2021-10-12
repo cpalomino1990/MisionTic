@@ -28,11 +28,7 @@ namespace ProyectoCiclo3.App.Frontend
             
             services.AddSingleton<RepositorioAviones, RepositorioAviones>();
             services.AddSingleton<RepositorioRutas, RepositorioRutas>();
-<<<<<<< HEAD
             services.AddSingleton<RepositorioAeropuertos, RepositorioAeropuertos>();
-=======
-        }
->>>>>>> 11d5700ab33908607db7925e684543b7c20b7504
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

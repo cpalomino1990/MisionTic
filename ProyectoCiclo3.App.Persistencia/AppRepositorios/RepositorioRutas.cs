@@ -8,38 +8,48 @@ namespace ProyectoCiclo3.App.Persistencia.AppRepositorios
     public class RepositorioRutas
     {
         List<Rutas> rutas;
-
- public RepositorioRutas()
-    {
-   rutas = new List<Rutas>()
-        {
-            new Rutas{Id=4,Origen= 23, Destino= 323,Tiempo_Estimado=4},
-            new Rutas{Id=5,Origen= 232, Destino= 65,Tiempo_Estimado=6},
-            new Rutas{Id=6,Origen= 544, Destino= 12,Tiempo_Estimado=1}
-        };
-        }
- 
+        private readonly AppContext _appContext = new AppContext();
+        
         public IEnumerable<Rutas> GetAll()
         {
-            return rutas;
+           return _appContext.Rutas;
         }
+
  
         public Rutas GetRutaWithId(int Id){
-            return rutas.SingleOrDefault(b => b.Id == Id);
-            
+        return _appContext.Rutas.Find(Id);
         }
         
-       
+        public Rutas Create(Rutas newRuta)
+    {
+        var addRuta = _appContext.Rutas.Add(newRuta);
+        _appContext.SaveChanges();
+        return addRuta.Entity;
+    }
 
-        public Rutas Update(Rutas newRuta){
-            var ruta = rutas.SingleOrDefault(b => b.Id == newRuta.Id);
-            if(ruta != null){
-                ruta.Origen = newRuta.Origen;
-                ruta.Destino = newRuta.Destino;
-                ruta.Tiempo_Estimado = newRuta.Tiempo_Estimado;
-                
+       public void Delete(int Id)
+    {
+        var ruta = _appContext.Rutas.Find(Id);
+        if (ruta == null)
+            return;
+        _appContext.Rutas.Remove(ruta);
+        _appContext.SaveChanges();
+    }
+
+
+    public Rutas Update(Rutas newRuta){
+        var ruta = _appContext.Rutas.Find(newRuta.Id);
+        if(ruta != null){
+            ruta.Origen = newRuta.Origen;
+            ruta.Destino = newRuta.Destino;
+            ruta.Tiempo_Estimado = newRuta.Tiempo_Estimado;
+           
+            //Guardar en base de datos
+            _appContext.SaveChanges();
             }
-        return ruta;
+            return ruta;
         }
     }
 }
+         
+

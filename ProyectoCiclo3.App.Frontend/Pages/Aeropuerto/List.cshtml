@@ -2,9 +2,19 @@
 @model ProyectoCiclo3.App.Frontend.Pages.ListAeropuertoModel
 @{
 }
+ <link rel="stylesheet" href="~/css/List.css"/>
+ <link rel="stylesheet" href="~/css/breadcrumb.css"/>
+ <script src="~/js/breadcrumb.js" asp-append-version="true"></script>
+  <div id="orangeUI">
+       <div class="breadcrumbs">
+            <ul>
+                <li><a href="/Index">Home</a><div class="bread-shadow">Home</div></li>
+                <li><a href="/Aeropuerto/List"class="current">Listas</a><div class="bread-shadow">Listas</div></li>
+            
+            </ul>
+        </div> 
+ </div>
 
-
-<link rel="stylesheet" href="~/css/List.css" />
 
 
 <div>
@@ -33,9 +43,12 @@
                 <td>@aeropuerto.coord_x</td>
                 <td>@aeropuerto.coord_y</td>
                 <td>
-                <a class="btn btn-info" asp-page="./Details" asp-route-aeropuertoId="@aeropuerto.id"><i class="fas fa-adjust"></i>Ver</a>
-                <a class="btn btn-info" asp-page="./Edit" asp-route-aeropuertoId="@aeropuerto.id"><i class="fas fa-adjust">Editar</a>
-                <a class="btn btn-danger" href="">Eliminar</a>
+                    <form method="POST">
+                    <a class="btn btn-info" asp-page="./Details" asp-route-aeropuertoId="@aeropuerto.id"><i class="fas fa-list-alt"></i></a>
+                    <a class="btn btn-info" asp-page="./Edit" asp-route-aeropuertoId="@aeropuerto.id"><i class="fas fa-edit"></i></a>              
+                        <input type="number" class="d-none" id="eliminar" asp-for="@aeropuerto.id">
+                        <button type="submit" class="btn btn-danger" ><i class="fas fa-trash" ></i></button>
+                    </form>
                 </td>
             </tr>
         </tbody>

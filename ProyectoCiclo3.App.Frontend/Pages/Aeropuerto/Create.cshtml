@@ -2,23 +2,48 @@
 @page
 @model ProyectoCiclo3.App.Frontend.Pages.CreateAeropuertoModel
 @{
-    var aeropuerto = Model.Aeropuerto;
+  var aeropuerto = Model.Aeropuerto; 
 }
+ <link rel="stylesheet" href="~/css/breadcrumb.css"/>
+ <script src="~/js/breadcrumb.js" asp-append-version="true"></script>
+  <div id="orangeUI">
+        <div class="breadcrumbs">
+        <ul>
+            <li><a href="/Index">Home</a><div class="bread-shadow">Home</div></li>
+            <li><a href="/Aeropuerto/Create">crear</a><div class="bread-shadow">Crear</div></li>
+        </ul>
+    </div> 
+    
+ </div>
+
 <div class="text-center">
   <form method="POST">
-    <label for="id" class="form-label">Id:</label>
-    <input type="text" class="form-control" id="id" name="id" placeholder="Id" asp-for="@aeropuerto.id">
-    <label for="nombre" class="form-label">nambre:</label>
-    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" asp-for="@aeropuerto.nombre">
-    <label for="ciudad" class="form-label">Ciudad:</label>
-    <input type="number" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad" asp-for="@aeropuerto.ciudad">
-    <label for="pais" class="form-label">Pais: </label>
-    <input type="number" class="form-control" id="pais" name="pais" placeholder="Pais" asp-for="@aeropuerto.pais">
-    <label for="coord_x" class="form-label">Coordenada X:</label>
-    <input type="number" class="form-control" id="coord_x" name="coord_x" placeholder="Coord x" asp-for="@aeropuerto.coord_x">
-    <label for="coord_y" class="form-label">Coordenada y:</label>
-    <input type="number" class="form-control" id="coord_y" name="coord_y" placeholder="Coord y" asp-for="@aeropuerto.coord_y">
-    <hr>
-    <button type="submit" class="btn btn-success">Enviar</button>
+    <div class="card" style="width: 24rem;">
+        <div class="form-floating mb-3">
+          <label for="nombre" class="form-label">nambre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" asp-for="@aeropuerto.nombre">
+        </div>
+        <div class="form-floating mb-3">
+          <label for="ciudad" class="form-label">Ciudad:</label>
+          <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad" asp-for="@aeropuerto.ciudad">
+        </div>
+        <div class="form-floating mb-3">
+          <label for="pais" class="form-label">Pais: </label>
+          <input type="text" class="form-control" id="pais" name="pais" placeholder="Pais" asp-for="@aeropuerto.pais">
+        </div>
+        <div class="form-floating mb-3">
+          <label for="coord_x" class="form-label">Coordenada X:</label>
+          <input type="number" class="form-control" id="coord_x" name="coord_x" placeholder="Coord x" asp-for="@aeropuerto.coord_x">
+        </div>
+        <div class="form-floating mb-3">
+          <label for="coord_y" class="form-label">Coordenada y:</label>
+          <input type="number" class="form-control" id="coord_y" name="coord_y" placeholder="Coord y" asp-for="@aeropuerto.coord_y">
+        </div>
+        
+      </div>
+     
+        <button type="submit" class="btn btn-success">Enviar</button>
   </form>
 </div>
+
+

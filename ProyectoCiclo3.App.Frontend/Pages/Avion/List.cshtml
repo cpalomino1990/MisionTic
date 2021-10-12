@@ -21,7 +21,6 @@
                     <th>Mumeros de Asientos</th>
                     <th>Numeros de Baños</th>
                     <th>Capasidad Maxima</th>
-                     
                     <th>
                         <input id="buscar" type="text" class="form-control" placeholder="Escriba algo para filtrar" />
                     </th>
@@ -42,9 +41,7 @@
                 <td >
                     <form method="POST">
                     <a class="btn btn-info" asp-page="./Details" asp-route-avionId="@avion.id"><i class="fas fa-list-alt"></i></a>
-                    <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.id"><i class="fas fa-edit"></i></a>
-                  
-                    
+                    <a class="btn btn-info" asp-page="./Edit" asp-route-avionId="@avion.id"><i class="fas fa-edit"></i></a>              
                         <input type="number" class="d-none" id="eliminar" asp-for="@avion.id">
                         <button type="submit" class="btn btn-danger" ><i class="fas fa-trash" ></i></button>
                     </form>
